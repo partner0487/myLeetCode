@@ -42,4 +42,3 @@ int main()
     string res = sol.shortestBeautifulSubstring(s, k);
     cout << res;
 }
-// 1 10 100 1000 10001 100011
