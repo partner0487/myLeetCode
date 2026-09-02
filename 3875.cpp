@@ -2,17 +2,19 @@
 #include <algorithm>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    bool uniformArray(vector<int>& nums1) {
-        
+    bool uniformArray(vector<int> &nums1)
+    {
+        return 1;
     }
 };
 
 int main()
 {
     Solution sol;
-    vector<int> nums = {3, 9, 2, 1, 7};
+    vector<int> nums = {4, 6};
     bool ans = sol.uniformArray(nums);
     cout << ans;
 }
