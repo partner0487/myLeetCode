@@ -7,9 +7,10 @@ public:
     vector<long long> resultArray(vector<int> &nums, int k)
     {
         vector<long long> dp(k, 0), ans(k, 0);
+        vector<long long> next_dp(k, 0);
         for (auto num : nums)
         {
-            vector<long long> next_dp(k, 0);
+            ranges::fill(next_dp, 0);
             int val = num % k;
             next_dp[val]++;
             ans[val]++;
